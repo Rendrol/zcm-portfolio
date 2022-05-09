@@ -1,4 +1,5 @@
 body{
+  background-color: #e3daec;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -15,6 +16,48 @@ ul{
 }
 
 /* navbar */
+.navbar-container{
+  background-color: #e3daec;
+  background-color: rgba(227, 218, 236, 0.5);
+  padding: 2vw 3vw;
+  position:fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
+  transition: top .6s;
+}
+
+.navbar{
+  padding:0;
+}
+
+.navbar-brand{
+  padding:0;
+  font-size: calc((2 - 1) * 1.2vw + 1rem);
+}
+
+.nav-item{
+  font-family: adelle-sans,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: black;
+  margin-left: 0.8vw;
+}
+
+.ins-icon{
+  margin-left: 1.8vw;
+}
+
+/* scroll down navbar animation */
+.navbar-container.animate{
+  top: -118.578px;
+}
+
+.navbar-container.sticky{
+  top:0;
+  z-index:100;
+}
 
 /* hover display wrapper */
 .hover-display{
@@ -47,6 +90,7 @@ ul{
 
 .hover-items{
   text-align: center;
+  padding-top: 118.578px;
 }
 
 .hover-item-title{
