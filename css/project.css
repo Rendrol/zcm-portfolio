@@ -115,11 +115,9 @@ a:hover{
   position:relative;
   width:90vw;
   overflow: hidden;
-  /* text-align: center; */
 }
 
 .display-img{
-  padding-left:
   position:relative;
   width: 100%;
   height: auto;
@@ -128,4 +126,29 @@ a:hover{
 
 .display-text{
   padding: 3% 0;
+}
+
+/* image gallery */
+.gallery-text-heading{
+  font-family: 'Cormorant Garamond', serif;
+  padding-bottom: 2%;
+}
+
+
+.gallery-img{
+  width:100%;
+  display: inline-block;
+}
+
+.gallery-img-text{
+  padding: 3% 0;
+}
+
+.gallery-text{
+  letter-spacing:0.45px;
+}
+
+.sticky-intro{
+  position: fixed;
+  top: 0;
 }
