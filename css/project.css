@@ -90,6 +90,42 @@ a:hover{
 }
 
 /* content */
-.row{
+.content-wrapper{
+  font-family: adelle-sans,sans-serif;
+  font-weight: 300;
+  position:relative;
+  top:105vh;
+}
+
+.intro{
   margin:0;
+  text-align:justify;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  padding:6vmax 3vw;
+}
+
+/* image display */
+.image-block-wrapper{
+  max-width:100vw;
+  padding:3.3vmax 5vw;
+}
+
+.display{
+  position:relative;
+  width:90vw;
+  overflow: hidden;
+  /* text-align: center; */
+}
+
+.display-img{
+  padding-left:
+  position:relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.display-text{
+  padding: 3% 0;
 }
