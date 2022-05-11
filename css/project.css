@@ -145,28 +145,24 @@ a:hover{
   background-color: #e3daec;
   background-color: rgba(227, 218, 236, 0.8);
   height:55%;
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
   padding-left: 0;
 }
 
 .gallery-text-heading{
   font-family: 'Cormorant Garamond', serif;
   padding-bottom: 2%;
-  position: sticky;
-  top: 0;
 }
 
 .gallery-text{
   letter-spacing:0.45px;
   text-align: justify;
   padding-right: 1rem;
-  position: sticky;
-  top: 0;
 }
-
+/* responsive */
 @media (max-width:576px) {
-  .gallery-text{
+  .gallery-text-intro{
     position:relative;
   }
 }
@@ -186,10 +182,6 @@ a:hover{
   font-family: 'Cormorant Garamond', serif;
   padding:0 4.5vw 10vmax 4vw;
   margin:0;
-}
-
-.prev-page{
-
 }
 
 .next-page{
