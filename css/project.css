@@ -66,8 +66,8 @@ a:hover{
   top:0;
   left:0;
   display: block;
-  width:100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   overflow: hidden;
   background-color: black;
   z-index: -10;
@@ -76,17 +76,25 @@ a:hover{
 .bg-img-display{
   position: relative;
   bottom: 40%;
-  left:0;
+  left:-10%;
   display: block;
-  width:100%;
-  height:150%;
-  background: url("../images/project-she-glanced-back-at-me/title.jpeg");
+  width:110%;
+  height:140%;
+  background: url("../images/project-she-glanced-back-at-me/title.jpeg") no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   /* transparent overlay */
   opacity: 0.8;
   filter:alpha(opacity=80);
   z-index: -9;
+}
+@media (max-aspect-ratio: 1/1) {
+  .bg-img-display{
+    bottom: 0;
+    height:100%;
+    background-position: center;
+    left:0;
+    width:100%;
+  }
 }
 
 /* content */
@@ -137,18 +145,30 @@ a:hover{
   background-color: #e3daec;
   background-color: rgba(227, 218, 236, 0.8);
   height:55%;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
+  padding-left: 0;
 }
 
 .gallery-text-heading{
   font-family: 'Cormorant Garamond', serif;
   padding-bottom: 2%;
+  position: sticky;
+  top: 0;
 }
 
 .gallery-text{
   letter-spacing:0.45px;
   text-align: justify;
+  padding-right: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width:576px) {
+  .gallery-text{
+    position:relative;
+  }
 }
 
 .gallery-img{
@@ -161,7 +181,22 @@ a:hover{
   padding: 3% 0;
 }
 
-.sticky-intro{
-  position: sticky;
-  top: 0;
+/* pagination */
+.pagination{
+  font-family: 'Cormorant Garamond', serif;
+  padding:0 4.5vw 10vmax 4vw;
+  margin:0;
+}
+
+.prev-page{
+
+}
+
+.next-page{
+  text-align: right;
+}
+
+.pagination-icon{
+  padding: 0 1.5rem;
+  color:#003B4A;
 }

@@ -74,8 +74,8 @@ ul{
   transition: transform 1.5s;
   position: fixed;
   bottom: 0;
-  /* width: 100vw; */
-  height:auto;
+  width: 100vw;
+  height:100vh;
   z-index: -100;
 }
 
@@ -83,10 +83,10 @@ ul{
   position: relative;
   bottom: 0;
   width: 100vw;
+  height: 100vh;
   object-fit: cover;
   margin: auto;
 }
-
 
 /* hover item list */
 .hover-items-list{
