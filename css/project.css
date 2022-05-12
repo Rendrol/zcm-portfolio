@@ -108,15 +108,15 @@ a:hover {
 
 .intro {
   margin: 0;
-  text-align: justify;
+  text-align: center;
   line-height: 1.8;
   font-size: 1rem;
   padding: 6vmax 3vw;
+  letter-spacing: 0.6px;
 }
 
 .intro-heading{
   font-family: 'Cormorant Garamond', serif;
-  text-align: center;
   padding-bottom: 2rem;
 }
 
