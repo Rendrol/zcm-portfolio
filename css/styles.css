@@ -104,13 +104,3 @@ ul{
   font-size: calc((4 - 1) * 1.2vw + 1rem);
   display: inline-block;
 }
-
-/* animation */
-.hover-img-show{
-  visibility: visible;
-  /* display: table; */
-}
-
-.hover-img-hide{
-  visibility: hidden;
-}

@@ -21,6 +21,7 @@ a:hover{
   left:0;
   overflow: hidden;
   transition: top .6s;
+  z-index: 100;
 }
 
 .navbar{
@@ -159,11 +160,18 @@ a:hover{
   letter-spacing:0.45px;
   text-align: justify;
   padding-right: 1rem;
+  position: relative;
 }
 /* responsive */
 @media (max-width:576px) {
+  .intro{
+    padding: 2rem;
+  }
   .gallery-text-intro{
     position:relative;
+  }
+  .gallery-wrapper{
+    padding-left: 1rem;
   }
 }
 

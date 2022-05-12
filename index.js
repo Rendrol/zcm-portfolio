@@ -41,3 +41,4 @@ $(".hover-item-title").hover(function() {
   //image animation - hoverout:fade out
   $("#sticky-image").fadeOut(1000);
 })
+//hover-item mobile responsive

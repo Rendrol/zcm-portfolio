@@ -19,6 +19,7 @@ $(function(){
     }
 
     scroll = $(document).scrollTop();
-
   });
 })
+
+// navbar burger
