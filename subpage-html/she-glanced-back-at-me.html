@@ -19,7 +19,35 @@
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/89093cfd08.js" crossorigin="anonymous"></script>
   <!-- disable right clicks -->
-  <script language=JavaScript> function clickIE4(){ if (event.button==2){return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("return false") </script>
+  <script language=JavaScript>
+    function clickIE4() {
+      if (event.button == 2) {
+        return false;
+      }
+    }
+
+    function clickNS4(e) {
+      if (document.layers || document.getElementById && !document.all) {
+        if (e.which == 2 || e.which == 3) {
+          return false;
+        }
+      }
+    }
+    if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = clickNS4;
+    } else if (document.all && !document.getElementById) {
+      document.onmousedown = clickIE4;
+    }
+    document.oncontextmenu = new Function("return false")
+  </script>
+  <!-- title image background -->
+  <style media="screen">
+    .bg-img-display{
+      background: url("../images/project-she-glanced-back-at-me/title.jpeg") no-repeat center;
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
@@ -258,11 +286,12 @@
       </div>
       <div class="next-page col-6">
         <div>
-          <h2>
-            "Marching On"
-            <i class="pagination-icon fa-solid fa-chevron-right fa-sm"></i>
-          </h2>
-
+          <a href="./marching-on.html">
+            <h2>
+              <p class="pagination-text">"Marching On"</p>
+              <i class="pagination-icon fa-solid fa-chevron-right fa-sm"></i>
+            </h2>
+          </a>
         </div>
       </div>
     </div>

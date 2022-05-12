@@ -22,4 +22,4 @@ $(function(){
   });
 })
 
-// navbar burger
+//project page: background section

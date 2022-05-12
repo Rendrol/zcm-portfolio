@@ -1,40 +1,41 @@
-body{
+body {
   background-color: #e3daec;
   font-family: 'Cormorant Garamond', serif;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
 }
-a:hover{
+
+a:hover {
   color: black;
 }
 
 /* navbar */
-.navbar-container{
+.navbar-container {
   background-color: #e3daec;
   background-color: rgba(227, 218, 236, 0.5);
   padding: 2vw 3vw;
-  position:fixed;
-  top:0;
-  left:0;
+  position: fixed;
+  top: 0;
+  left: 0;
   overflow: hidden;
   transition: top .6s;
   z-index: 100;
 }
 
-.navbar{
-  padding:0;
+.navbar {
+  padding: 0;
 }
 
-.navbar-brand{
-  padding:0;
+.navbar-brand {
+  padding: 0;
   font-size: calc((2 - 1) * 1.2vw + 1rem);
 }
 
-.nav-item{
-  font-family: adelle-sans,sans-serif;
+.nav-item {
+  font-family: adelle-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 1.1rem;
@@ -42,161 +43,177 @@ a:hover{
   margin-left: 0.8vw;
 }
 
-.ins-icon{
+.ins-icon {
   margin-left: 1.8vw;
 }
 
 /* scroll down navbar animation */
-.navbar-container.animate{
+.navbar-container.animate {
   top: -118.578px;
 }
 
-.navbar-container.sticky{
-  top:0;
-  z-index:100;
+.navbar-container.sticky {
+  top: 0;
+  z-index: 100;
 }
 
 /* navbar highlight */
-.current-page{
+.current-page {
   text-decoration: underline;
 }
 
 /* background section */
-.bg-img-overlay{
+.bg-img-overlay {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   display: block;
-  width:100vw;
-  height:100vh;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background-color: black;
   z-index: -10;
 }
 
-.bg-img-display{
+.bg-img-display {
   position: relative;
-  bottom: 40%;
-  left:-10%;
+  bottom: 0;
+  left: 0;
   display: block;
-  width:110%;
-  height:140%;
-  background: url("../images/project-she-glanced-back-at-me/title.jpeg") no-repeat;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
   /* transparent overlay */
   opacity: 0.8;
-  filter:alpha(opacity=80);
+  filter: alpha(opacity=80);
   z-index: -9;
 }
+
 @media (max-aspect-ratio: 1/1) {
-  .bg-img-display{
+  .bg-img-display {
     bottom: 0;
-    height:100%;
+    height: 100%;
     background-position: center;
-    left:0;
-    width:100%;
+    left: 0;
+    width: 100%;
   }
 }
 
 /* content */
-.content-wrapper{
-  font-family: adelle-sans,sans-serif;
+.content-wrapper {
+  font-family: adelle-sans, sans-serif;
   font-weight: 300;
-  position:relative;
-  top:105vh;
+  position: relative;
+  top: 105vh;
 }
 
-.intro{
-  margin:0;
-  text-align:justify;
+.intro {
+  margin: 0;
+  text-align: justify;
   line-height: 1.8;
   font-size: 1.2rem;
-  padding:6vmax 3vw;
+  padding: 6vmax 3vw;
 }
 
 /* image display */
-.image-block-wrapper{
-  max-width:100vw;
-  padding:3.3vmax 5vw;
+.image-block-wrapper {
+  max-width: 100vw;
+  padding: 3.3vmax 5vw;
 }
 
-.display{
-  position:relative;
-  width:90vw;
+.display {
+  position: relative;
+  width: 90vw;
   overflow: hidden;
 }
 
-.display-img{
-  position:relative;
+.display-img {
+  position: relative;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.display-text{
+.display-text {
   padding: 3% 0;
 }
 
 /* image gallery */
-.gallery{
-  padding:5% 0;
+.gallery {
+  padding: 5% 0;
 }
 
-.gallery-text-intro{
+.gallery-text-intro {
   background-color: #e3daec;
   background-color: rgba(227, 218, 236, 0.8);
-  height:55%;
+  height: 55%;
   position: sticky;
   top: 0;
   padding-left: 0;
 }
 
-.gallery-text-heading{
+.gallery-text-heading {
   font-family: 'Cormorant Garamond', serif;
   padding-bottom: 2%;
 }
 
-.gallery-text{
-  letter-spacing:0.45px;
+.gallery-text {
+  letter-spacing: 0.45px;
   text-align: justify;
   padding-right: 1rem;
   position: relative;
 }
+
 /* responsive */
 @media (max-width:576px) {
-  .intro{
+  .intro {
     padding: 2rem;
   }
-  .gallery-text-intro{
-    position:relative;
+
+  .gallery-text-intro {
+    position: relative;
   }
-  .gallery-wrapper{
+
+  .gallery-wrapper {
     padding-left: 1rem;
   }
 }
 
-.gallery-img{
-  width:100%;
-  height:auto;
+.gallery-img {
+  width: 100%;
+  height: auto;
   display: inline-block;
 }
 
-.gallery-img-text{
+.gallery-img-text {
   padding: 3% 0;
 }
 
-/* pagination */
-.pagination{
-  font-family: 'Cormorant Garamond', serif;
-  padding:0 4.5vw 10vmax 4vw;
-  margin:0;
+hr.gallery-break-line{
+  border: 0;
+  height: 3px;
+  margin: 3rem 0;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #003B4A, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #003B4A, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #003B4A, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #003B4A, #f0f0f0);
 }
 
-.next-page{
+/* pagination */
+.pagination {
+  font-family: 'Cormorant Garamond', serif;
+  padding: 0 4.5vw 10vmax 4vw;
+  margin: 0;
+}
+
+.next-page {
   text-align: right;
 }
 
-.pagination-icon{
+.pagination-icon {
   padding: 0 1.5rem;
-  color:#003B4A;
+  color: #003B4A;
+}
+
+.pagination-text{
+  display: inline;
 }
