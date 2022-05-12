@@ -25,20 +25,23 @@ $(function(){
 
 
 // hover
-$(".hover-item-title").hover(function() {
+
+//mouseenter&touch - image appear:
+$(".hover-item-title").on("touchstart mouseenter", function(){
   //change image due to the hover item
   var imgUrl = $(this).data("src");
   $("#sticky-image").attr("src", imgUrl);
-  //image animation - hover:fade in
-  $("#sticky-image").stop();
+  //image animation - fade in
+  $("#sticky-image").stop(true,true);
   $("#sticky-image").fadeIn(1000);
-  //image animation - hover:zoom in
+  //image animation - zoom in
   $(".hover-base-sticky").css("transform","scale("+ 1.05 +")")
-}, function() {
-  $("#sticky-image").stop();
-  //image animation - hoverout:zoom out
+})
+
+//mouseleave&touchend - image disappear:
+$(".hover-item-title").on("touchend mouseleave touchcancel", function(){
+  //image animation - touchend:zoom out
   $(".hover-base-sticky").css("transform","scale("+ 1 +")");
-  //image animation - hoverout:fade out
+  //image animation - touchend:fade out
   $("#sticky-image").fadeOut(1000);
 })
-//hover-item mobile responsive

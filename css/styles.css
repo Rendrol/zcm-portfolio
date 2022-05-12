@@ -90,7 +90,7 @@ ul{
 
 /* hover item list */
 .hover-items-list{
-  padding: 5vw;
+  padding: 0 5vw 5vw;
 }
 
 .hover-items{
@@ -99,8 +99,7 @@ ul{
 }
 
 .hover-item-title{
-  padding: 1rem 0;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   font-size: calc((4 - 1) * 1.2vw + 1rem);
   display: inline-block;
 }
