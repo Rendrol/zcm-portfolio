@@ -110,8 +110,14 @@ a:hover {
   margin: 0;
   text-align: justify;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 6vmax 3vw;
+}
+
+.intro-heading{
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 /* image display */
