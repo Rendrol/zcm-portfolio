@@ -1,43 +1,47 @@
-body{
+body {
   background-color: #e3daec;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
-a{
+img {
+  pointer-events: none;
+}
+
+a {
   color: black;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: black;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
 /* navbar */
-.navbar-container{
+.navbar-container {
   background-color: #e3daec;
   background-color: rgba(227, 218, 236, 0.5);
   padding: 2vw 3vw;
-  position:fixed;
-  top:0;
-  left:0;
+  position: fixed;
+  top: 0;
+  left: 0;
   overflow: hidden;
-  transition: top .6s;
+  transition: top 0.6s;
 }
 
-.navbar{
-  padding:0;
+.navbar {
+  padding: 0;
 }
 
-.navbar-brand{
-  padding:0;
+.navbar-brand {
+  padding: 0;
   font-size: calc((2 - 1) * 1.2vw + 1rem);
 }
 
-.nav-item{
-  font-family: adelle-sans,sans-serif;
+.nav-item {
+  font-family: adelle-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 1.1rem;
@@ -45,41 +49,41 @@ ul{
   margin-left: 0.8vw;
 }
 
-.ins-icon{
+.ins-icon {
   margin-left: 1.8vw;
 }
 
 /* scroll down navbar animation */
-.navbar-container.animate{
+.navbar-container.animate {
   top: -118.578px;
 }
 
-.navbar-container.sticky{
-  top:0;
-  z-index:100;
+.navbar-container.sticky {
+  top: 0;
+  z-index: 100;
 }
 
 /* navbar highlight */
-.current-page{
+.current-page {
   text-decoration: underline;
 }
 
 /* hover display wrapper */
-.hover-display{
-  padding:0 3vw 3vw;
+.hover-display {
+  padding: 0 3vw 3vw;
 }
 
 /* hover images */
-.hover-base-sticky{
+.hover-base-sticky {
   transition: transform 1.5s;
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height:100vh;
+  height: 100vh;
   z-index: -100;
 }
 
-#sticky-image{
+#sticky-image {
   position: relative;
   bottom: 0;
   width: 100vw;
@@ -89,16 +93,16 @@ ul{
 }
 
 /* hover item list */
-.hover-items-list{
+.hover-items-list {
   padding: 0 5vw 5vw;
 }
 
-.hover-items{
+.hover-items {
   text-align: center;
   padding-top: 118.578px;
 }
 
-.hover-item-title{
+.hover-item-title {
   margin: 1rem 1rem;
   font-size: calc((4 - 1) * 1.2vw + 1rem);
   display: inline-block;
